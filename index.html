@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>复旦官网快速索引 2026</title>
+<style>
+  :root {
+    --fdu-blue: #1E3A5F;
+    --fdu-blue-light: #2C5282;
+    --fdu-blue-lighter: #EBF4FF;
+    --fdu-red: #9B2C2C;
+    --bg: #F7FAFC;
+    --card-bg: #FFFFFF;
+    --text: #2D3748;
+    --text-light: #718096;
+    --border: #E2E8F0;
+    --link: #3182CE;
+    --link-hover: #1E3A5F;
+    --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+    --radius: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0 0 40px;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--fdu-blue) 0%, var(--fdu-blue-light) 100%);
+    color: #fff;
+    padding: 28px 24px 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  header h1 { font-size: 24px; font-weight: 700; letter-spacing: .5px; }
+  header p  { font-size: 13px; opacity: .8; margin-top: 4px; }
+
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+
+  .card-header {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-header.blue   { background: var(--fdu-blue); }
+  .card-header.green  { background: #2F855A; }
+  .card-header.purple { background: #553C9A; }
+  .card-header.orange { background: #C05621; }
+  .card-header.teal   { background: #285E61; }
+  .card-header.red    { background: var(--fdu-red); }
+
+  .card-body { padding: 8px 16px 12px; }
+
+  /* ---- Link list ---- */
+  .link-list { list-style: none; }
+  .link-list li {
+    border-bottom: 1px solid var(--border);
+    padding: 5px 0;
+    font-size: 13.5px;
+  }
+  .link-list li:last-child { border-bottom: none; }
+  .link-list a {
+    color: var(--link);
+    text-decoration: none;
+    transition: color .15s;
+  }
+  .link-list a:hover { color: var(--link-hover); text-decoration: underline; }
+
+  /* ---- Text list (公众号 / 小程序) ---- */
+  .text-list { line-height: 1.75; font-size: 13.5px; color: var(--text); }
+  .text-list .item {
+    padding: 2px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .text-list .item:last-child { border-bottom: none; }
+  .text-list .item .highlight {
+    font-weight: 600;
+    color: var(--fdu-blue);
+  }
+  .text-list .note {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-left: 4px;
+  }
+
+  /* ---- Expired section ---- */
+  .expired-note {
+    font-size: 12.5px;
+    color: var(--fdu-red);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .expired-list { list-style: none; }
+  .expired-list li {
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--text-light);
+    text-decoration: line-through;
+  }
+  .expired-list a {
+    color: var(--text-light);
+    text-decoration: line-through;
+  }
+  .expired-list a:hover { color: var(--text); text-decoration: underline; }
+
+  /* Compact tweak for long text blocks */
+  .card.compact .card-body { padding: 6px 14px 8px; }
+
+  /* ---- Footer ---- */
+  footer {
+    max-width: 1200px;
+    margin: 28px auto 0;
+    padding: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 复旦官网快速索引 2026</h1>
+  <p>常用校园网站 · 公众号 · 小程序一站式导航</p>
+</header>
+
+<div class="grid">
+
+  <!-- ===== Row 1 Col 1: 通用学生事务 ===== -->
+  <div class="card">
+    <div class="card-header blue">📋 通用学生事务类</div>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="https://freshman.fudan.edu.cn/" target="_blank">复旦大学迎新系统（本科生/研究生）</a></li>
+        <li><a href="http://ehall.fudan.edu.cn/" target="_blank">ehall 网上办事服务大厅（建议使用微信小程序）</a></li>
+        <li><a href="http://mail.m.fudan.edu.cn/" target="_blank">m.fudan 复旦云邮箱</a></li>
+        <li><a href="https://xxb.fudan.edu.cn/main.htm" target="_blank">复旦大学信息化办公室（校园网、一卡通、校园 VPN 等）</a></li>
+        <li><a href="https://elife.fudan.edu.cn/login.jsp" target="_blank">复旦大学校园生活服务平台（场馆预约、教室借用等）</a></li>
+        <li><a href="http://payment.fudan.edu.cn/pay/index.html" target="_blank">复旦大学收费服务平台</a></li>
+        <li><a href="https://library.fudan.edu.cn/" target="_blank">复旦大学图书馆</a></li>
+        <li><a href="https://zb.fudan.edu.cn/" target="_blank">正版软件下载（Adobe、MATLAB、Windows 等）</a></li>
+        <li><a href="https://gsas.fudan.edu.cn/logon" target="_blank">研究生报考服务系统</a></li>
+        <li><a href="https://career.fudan.edu.cn/" target="_blank">学生就业信息网</a></li>
+        <li><a href="https://fuedf.fudan.edu.cn/main.htm" target="_blank">复旦大学教育发展基金会</a></li>
+        <li><a href="https://cwgl.fudan.edu.cn/WFManager/home2.jsp" target="_blank">财务与国有资产管理处</a></li>
+        <li><a href="https://fenglin.fudan.edu.cn/" target="_blank">复旦大学枫林校区管理委员会</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Row 1 Col 2: 课程成绩教务类 ===== -->
+  <div class="card">
+    <div class="card-header green">📚 课程成绩教务类</div>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="https://jwc.fudan.edu.cn/" target="_blank">复旦大学教务处（课程表、留学交换、暑期课程等）</a></li>
+        <li><a href="https://fdjwgl.fudan.edu.cn/student/home" target="_blank">复旦教务管理（学籍、培养方案、选课、成绩排名等）</a></li>
+        <li><a href="https://xk.fudan.edu.cn/xk/home.action" target="_blank">本科生选课系统</a></li>
+        <li><a href="http://yjsxk.fudan.edu.cn/yjsxkapp/sys/xsxkappfudan/*default/index.do" target="_blank">研究生选课系统</a></li>
+        <li><a href="https://elearning.fudan.edu.cn/" target="_blank">eLearning（作业提交）</a></li>
+        <li><a href="https://ehall.fudan.edu.cn/jxmh/" target="_blank">教学门户（原 jwfw 教务系统）</a></li>
+        <li><a href="https://workflow1.fudan.edu.cn/v2/site/appGroup?id=5" target="_blank">电子成绩单 / 学籍证明 / 排名</a></li>
+        <li><a href="https://fudan.mooc.chaoxing.com/portal" target="_blank">复旦大学在线教育中心（超星）</a></li>
+        <li><a href="https://ce.fudan.edu.cn/index.html" target="_blank">评教 — 教学质量管理平台</a></li>
+        <li><a href="https://caps.fudan.edu.cn/_redirect?siteId=79&columnId=13000&articleId=117196" target="_blank">心理测评（每年指定时段开放）</a></li>
+        <li><a href="https://fdtyjw.fudan.edu.cn/sportexam/" target="_blank">体育网络理论考试 — 学生登录</a></li>
+        <li><a href="https://fdtyjw.fudan.edu.cn/sportscore/" target="_blank">体育管理综合查询系统 V2.0</a></li>
+        <li><a href="http://10.64.130.6" target="_blank">在线课表（需校园网）</a></li>
+        <li><a href="http://10.64.130.6/clock.asp" target="_blank">电脑全屏时钟网页版（需校园网）</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Row 2 Col 1: 公众号推荐 ===== -->
+  <div class="card compact">
+    <div class="card-header purple">📱 公众号推荐</div>
+    <div class="card-body">
+      <div class="text-list">
+        <div class="item"><span class="highlight">复旦大学</span></div>
+        <div class="item"><span class="highlight">各个学院公众号</span><span class="note">（团委、学生活动、校友会、本科/研究生可能不同账号）</span></div>
+        <div class="item"><span class="highlight">各宿舍区公众号</span><span class="note">（南/东区：复旦南东苑；南区学生活动中心：FDU益创星球；北区：复旦北苑；江湾：复旦江湾生活园区 / 复旦江湾；枫林：复旦枫林）、复旦家园</span></div>
+        <div class="item"><span class="highlight">各书院公众号</span><span class="note">（腾飞、志德、希德、任重、克卿、相辉学堂）、书院在复旦</span></div>
+        <div class="item"><span class="highlight">复旦信息办</span><span class="note">（成绩提醒、点餐提醒、预约入校）</span></div>
+        <div class="item"><span class="highlight">复旦大学教务处</span></div>
+        <div class="item"><span class="highlight">复旦生涯</span><span class="note">（职业规划、就业信息）</span> · <span class="highlight">复旦就业</span> · <span class="highlight">复旦 iJob 协会</span> · <span class="highlight">复旦 TLS</span> · <span class="highlight">复旦互联网联盟</span> · <span class="highlight">复旦管院 CDO</span></div>
+        <div class="item"><span class="highlight">复旦大学财务与国资处</span><span class="note">（缴纳学费、住宿费）</span></div>
+        <div class="item"><span class="highlight">复旦校友服务平台</span><span class="note">（领券）</span> · <span class="highlight">复旦大学校友总会</span></div>
+        <div class="item"><span class="highlight">复旦总务</span><span class="note">（吃饭不迷路）</span> · <span class="highlight">复旦学生超市</span><span class="note">（打折信息）</span></div>
+        <div class="item"><span class="highlight">复旦大学体育教学部</span></div>
+        <div class="item"><span class="highlight">复旦心理健康教育中心</span></div>
+        <div class="item"><span class="highlight">复旦大学创新创业学院</span><span class="note">（创新类比赛）</span></div>
+        <div class="item"><span class="highlight">复旦学生发展中心</span><span class="note">（学业辅导、比赛）</span> · <span class="highlight">复旦语言学习中心</span></div>
+        <div class="item"><span class="highlight">复旦 FDUROP</span><span class="note">（本科生学术研究资助计划）</span></div>
+        <div class="item"><span class="highlight">复旦大学图书馆微服务</span> · <span class="highlight">复旦大学图书馆</span></div>
+        <div class="item"><span class="highlight">复旦青年</span><span class="note">（团委报社）</span> · <span class="highlight">复旦人周报</span></div>
+        <div class="item"><span class="highlight">复旦招生</span> · <span class="highlight">复旦研招</span></div>
+        <div class="item"><span class="highlight">复旦团委青志</span><span class="note">（志愿服务）</span> · <span class="highlight">复旦西部计划项目办</span> · <span class="highlight">复旦团委实践部</span></div>
+        <div class="item"><span class="highlight">复旦大学国际合作交流</span><span class="note">（留学交换）</span> · <span class="highlight">复旦海外交流</span></div>
+        <div class="item"><span class="highlight">复旦大学教育发展基金会</span> · <span class="highlight">复旦资助</span><span class="note">（奖助学金）</span></div>
+        <div class="item"><span class="highlight">复旦学生</span> · <span class="highlight">复旦大学学生会</span></div>
+        <div class="item"><span class="highlight">团团在复旦</span> · <span class="highlight">复旦党建 1925</span></div>
+        <div class="item"><span class="highlight">复旦大学青年研究中心</span></div>
+        <div class="item"><span class="highlight">复旦保保</span><span class="note">（保卫处）</span></div>
+        <div class="item"><span class="highlight">复旦校名礼品屋</span></div>
+        <div class="item"><span class="highlight">各兴趣类社团公众号</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Row 2 Col 2: 小程序推荐 ===== -->
+  <div class="card compact">
+    <div class="card-header teal">🔗 小程序推荐</div>
+    <div class="card-body">
+      <div class="text-list">
+        <div class="item"><span class="highlight">复旦 eHall</span><span class="note">（网上办事大厅）</span></div>
+        <div class="item"><span class="highlight">复旦 eCard</span><span class="note">（校园卡）</span></div>
+        <div class="item"><span class="highlight">复旦校友卡</span></div>
+        <div class="item"><span class="highlight">复旦学生注册</span></div>
+        <div class="item"><span class="highlight">复旦文化校历</span><span class="note">（免费校园活动报名）</span></div>
+        <div class="item"><span class="highlight">复旦智慧书院</span><span class="note">（艺术学时、团支部实践打卡、宿舍区场地预约）</span></div>
+        <div class="item"><span class="highlight">复旦智慧体育</span><span class="note">（刷锻）</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Row 3 Col 1: 其他好网站推荐 ===== -->
+  <div class="card">
+    <div class="card-header orange">🌟 其他好网站推荐</div>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="https://3108.fudan.edu.cn/index" target="_blank">3108 青年创新平台</a></li>
+        <li><a href="https://fduguidebook.com/campus/freshman" target="_blank">新生入门 | FDUGuideBook</a></li>
+        <li><a href="https://aiagent.fudan.edu.cn/page/front/Mdefault/chat" target="_blank">DeepSeek-R1-fudan</a></li>
+        <li><a href="https://hr.fudan.edu.cn/" target="_blank">复旦大学人事处</a></li>
+        <li><a href="https://fudan-cs-labs.vercel.app/" target="_blank">复旦部分计算机实验室一览 </a></li>
+        <li><a href="http://www.acm.fudan.edu.cn/announcement" target="_blank">复旦大学程序设计竞赛</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Row 3 Col 2: 疑似已失效网站 ===== -->
+  <div class="card">
+    <div class="card-header red">⚠️ 疑似已失效网站</div>
+    <div class="card-body">
+      <p class="expired-note">敬请关注学校发布的最新消息，或更为及时的公众号信息</p>
+      <ul class="expired-list">
+        <li><a href="https://cloud.fudan.edu.cn/#userview/files" target="_blank">复旦云盘</a></li>
+        <li><a href="https://fdjpkc.fudan.edu.cn/" target="_blank">复旦大学精品课程网站</a></li>
+        <li><a href="http://lhdj.fudan.edu.cn/Main/LeftMenuT.do" target="_blank">外事工作服务系统</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  jyi · 2026
+</footer>
+
+</body>
+</html>
